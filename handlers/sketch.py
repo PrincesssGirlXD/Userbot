@@ -6,9 +6,9 @@ from PIL import Image
 
 
 @Client.on_message(filters.command("sketch", ["-"]) & filters.me)
-async def example(client: Client, message: Message):
+async def progress(client: Client, message: Message):
     x = await message.edit("<Strong>Making Sketch...</Sketch>")
-    image_file = await Client.download_media(message, True)
+    image_file = await Client.download_media(message, progress=progress)
     image = await Image.open(image_file)
     image = await image.convert("L")
     image = await Image.eval(image, lambda x: 255-x)
