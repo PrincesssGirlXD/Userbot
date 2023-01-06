@@ -5,7 +5,7 @@ from handlers.help import *
 from PIL import Image
 
 
-@Client.on_message(filters.command("sketch", [-]) & filters.me)
+@Client.on_message(filters.command("sketch", ["-"]) & filters.me)
 async def example(client: Client, message: Message):
     x = await message.edit("<Strong>Making Sketch...</Sketch>")
     image_file = Client.download_media("image.jpg")
