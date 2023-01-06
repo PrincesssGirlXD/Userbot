@@ -8,7 +8,7 @@ from handlers.help import *
  
 
  
-@Client.on_message(filters.command(["alive", "anya_awake"], [".", "-"]) & filters.me)
+@Client.on_message(filters.command(["alive", "awake"] & filters.regex & filters.me)
 async def alive(client: Client, e: Message):
     ids = 0
     try:
@@ -116,9 +116,9 @@ async def alive(client: Client, e: Message):
             ids += 1
         Alive_msg = f"Kᴏɴɪᴄʜɪᴡᴀ I Am Awake ❤️ \n\n"
         Alive_msg += f"◈ ━━━━━━ ◆ ━━━━━━ ◈ \n"
-        Alive_msg += f"► Mʏ Mᴀsᴛᴇʀ : [Flame](https://t.me/Rickz_2005) \n"
-        Alive_msg += f"► Powered By  : [ℋ𝐚𝐬𝐡𝐢𝐫𝐚 ✗ A S S O C I A T I O N 源](https://t.me/Hashira_Association) \n"
-        Alive_msg += f"► Sᴜᴘᴘᴏʀᴛ : [❤️Hashira❤️](https://t.me/HashiraXHeadquarters) \n"
+        Alive_msg += f"► Mʏ Mᴀsᴛᴇʀ : [🪬 ZoRo 🪬](https://t.me/DRAGONEYEGAMING) \n"
+        Alive_msg += f"► Core  : [YuigaRobot](https://t.me/YuigaRobot) \n"
+        Alive_msg += f"► Sᴜᴘᴘᴏʀᴛ : [❤️YUI❤️](https://t.me/Yuigasupport) \n"
         Alive_msg += f"◈ ━━━━━━ ◆ ━━━━━━ ◈ \n\n"
         await e.reply_photo(
         photo=ALIVE_PIC,
@@ -129,16 +129,16 @@ async def alive(client: Client, e: Message):
                         "• 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 •", url="https://t.me/Hashira_Association")
                 ], [
                     InlineKeyboardButton(
-                        "• O W N E R •", url="https://GitHub.com/Ricks-2005")
+                        "• O W N E R •", url="https://GitHub.com/PrincesssGirlXD")
                 ]],
         ),
     ) 
     except Exception as lol:         
-        Alive_msg = f"ᴏɴɪᴄʜɪᴡᴀ I Am Awake ❤️  \n\n"
+        Alive_msg = f"Kᴏɴɪᴄʜɪᴡᴀ I Am Awake ❤️ \n\n"
         Alive_msg += f"◈ ━━━━━━ ◆ ━━━━━━ ◈ \n"
-        Alive_msg += f"► Mʏ Mᴀsᴛᴇʀ : [Flame](https://t.me/Rickz_2005) \n"
-        Alive_msg += f"► Powered By : [ℋ𝐚𝐬𝐡𝐢𝐫𝐚 ✗ A S S O C I A T I O N 源](https://t.me/Hashira_Association)  \n"
-        Alive_msg += f"► Sᴜᴘᴘᴏʀᴛ : [❤️Hashira❤️](https://t.me/HashiraxHeadquarters) \n"
+        Alive_msg += f"► Mʏ Mᴀsᴛᴇʀ : [🪬 ZoRo 🪬](https://t.me/DRAGONEYEGAMING) \n"
+        Alive_msg += f"► Core  : [YuigaRobot](https://t.me/YuigaRobot) \n"
+        Alive_msg += f"► Sᴜᴘᴘᴏʀᴛ : [❤️YUI❤️](https://t.me/Yuigasupport) \n"
         Alive_msg += f"◈ ━━━━━━ ◆ ━━━━━━ ◈ \n\n"
         await e.reply_photo(
         photo=ALIVE_PIC,
@@ -149,7 +149,7 @@ async def alive(client: Client, e: Message):
                     InlineKeyboardButton("• 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 •", url="https://t.me/Hashira_Association"),
                 ],
                 [
-                    InlineKeyboardButton("• O W N E R •", url="https://GitHub.com/Ricks-2005"),
+                    InlineKeyboardButton("• O W N E R •", url="https://GitHub.com/PrincesssGirlXD"),
                 ],
             ],
         ),
